@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
     <title>Motivational Soundboard</title>
 </head>
 <body>
@@ -18,6 +20,13 @@
             <button onmousedown="playSound(4)" class="btn">Eat my sit</button>
             <button onmousedown="playSound(5)" class="btn">Research</button>
             <button onmousedown="playSound(6)" class="btn">Don't masturbate</button>
+            <button onmousedown="playSound(7)" class="btn">You</button>
+            <button onmousedown="playSound(8)" class="btn">Fakoff</button>
+            <button onmousedown="playSound(9)" class="btn">Hear me now!</button>
+            <button onmousedown="playSound(10)" class="btn">Love letter</button>
+            <button onmousedown="playSound(11)" class="btn">Pänänäs</button>
+
+
         </div>
     </div>
 
@@ -25,7 +34,7 @@
     
     playSound = (index) => {
         const  sounds = new Audio();
-        soundSources = ["sounds/pulsit.mp3","sounds/goldmedal.mp3", "sounds/sickfuck.mp3","sounds/lidl_pits.mp3", "sounds/eat.mp3",  "sounds/idgaf.mp3", "sounds/like.mp3"   ];
+        soundSources = ["sounds/pulsit.mp3","sounds/goldmedal.mp3", "sounds/sickfuck.mp3","sounds/lidl_pits.mp3", "sounds/eat.mp3",  "sounds/idgaf.mp3", "sounds/like.mp3", "sounds/small.mp3", "sounds/fuckoff.mp3", "sounds/hearmenow.mp3", "sounds/paska.mp3", "sounds/pänänäs.mp3",     ];
         sounds.src = soundSources[index]
         sounds.play();
     } 
